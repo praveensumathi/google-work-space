@@ -1,18 +1,24 @@
-import { Card } from "flowbite-react";
+import { Card, CustomFlowbiteTheme } from "flowbite-react";
 import { PricePlans } from "../types/types";
 import clsx from "clsx";
 
+const customTheme: CustomFlowbiteTheme["card"] = {
+  root: {
+    children: "flex h-full flex-col",
+  },
+};
+
 function PriceCard({ plans, index }: { plans: PricePlans; index: number }) {
   return (
-    <Card className="max-w">
-      <h5
+    <Card className="max-w" theme={customTheme}>
+      <h6
         className={clsx(
           "text-lg font-bold text-gray-600 bg-secondary text-center rounded-e-full mr-6 mt-6 py-3",
           { "bg-primary-gradient text-white": index % 2 != 0 }
         )}
       >
         {plans.heading}
-      </h5>
+      </h6>
       <div className="card-content px-6">
         <ul className="my-4 space-y-5">
           {plans.options.map((item) => (
@@ -36,7 +42,7 @@ function PriceCard({ plans, index }: { plans: PricePlans; index: number }) {
           ))}
         </ul>
       </div>
-      <div className="m-3 flex justify-end flex-col h-full">
+      <div className="m-6 flex justify-end flex-col h-full">
         <button
           type="button"
           className="font-semibold w-full h-10 justify-center 
