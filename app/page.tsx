@@ -5,6 +5,7 @@ import SectionTitle from "./components/sectionTitle";
 import ServiceCard from "./components/serviceCard";
 import { CustomFlowbiteTheme, Flowbite } from "flowbite-react";
 import { Banner } from "./components/banner";
+import About from "./components/about";
 
 const customTheme: CustomFlowbiteTheme = {
   card: {
@@ -25,6 +26,10 @@ export default function Home() {
           </div>
         </section>
       </div>
+      <section id="service-sections" className="md:px-10 px-4 pb-16">
+        <SectionTitle title="Google Workspace Partner/Reseller India" />
+        <About />
+      </section>
 
       <div className="container m-auto">
         <section id="price-plans" className="md:px-10 px-4 pb-16">
