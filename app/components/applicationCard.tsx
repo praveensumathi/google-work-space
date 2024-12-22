@@ -1,16 +1,23 @@
 import Image from "next/image";
-import { applications } from "../utils/util";
-import { Card } from "flowbite-react";
+import { Card, CustomFlowbiteTheme } from "flowbite-react";
 import { ApplicationList } from "../types/types";
+
+const customTheme: CustomFlowbiteTheme["card"] = {
+  root: {
+    children: "flex h-full flex-col p-4",
+  },
+};
 
 function ApplicationCard(item: ApplicationList) {
   return (
-    <Card className="p-4">
-      <Image src={item.imageUrl} alt={item.title} width={60} height={60} />
-      <div className="fw-extrabold text-4xl pt-2 bg-title-gradient bg-clip-text text-transparent">
-        {item.title}
+    <Card className="max-w" theme={customTheme}>
+      <div className="flex gap-3 items-center">
+        <Image src={item.imageUrl} alt={item.title} width={40} height={40} />
+        <div className="font-extrabold text-lg bg-title-gradient bg-clip-text text-transparent">
+          {item.title}
+        </div>
       </div>
-      <div className="fw-extrabold font-800 text-2xl py-2 text-primary-gradient">
+      <div className="text-base font-normal leading-tight text-gray-500 mt-5">
         {item.description}
       </div>
     </Card>

@@ -13,14 +13,14 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "#0891B2",
-        secondary: "#CFFAFE",
-        "primary-gradient": "linear-gradient(135deg, #0C869A 0%, #23B8CF 100%)",
+        primary: "#5945d2",
+        secondary: "#04c8eb",
       },
 
       backgroundImage: {
-        "primary-gradient": "linear-gradient(135deg, #0C869A 0%, #23B8CF 100%)",
-        "title-gradient": "linear-gradient(to left, #04c8eb, #00aff3, #0092f6, #0071ed, #5945d2)",
+        "primary-gradient":
+          "linear-gradient(to left, #04c8eb, #00aff3, #0092f6, #0071ed, #5945d2)",
+        "title-gradient": "linear-gradient(93deg, #0095da 0%, #ed1c24 111%)",
       },
     },
   },
