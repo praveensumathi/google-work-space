@@ -1,6 +1,7 @@
 import { CustomFlowbiteTheme, Flowbite } from "flowbite-react";
 import PriceCard from "./components/priceCard";
-import { businessPlans } from "./utils/util";
+import { applications, businessPlans } from "./utils/util";
+import ApplicationCard from "./components/applicationCard";
 
 const customTheme: CustomFlowbiteTheme = {
   card: {
@@ -27,7 +28,13 @@ export default function Home() {
             ))}
           </div>
         </section>
-        <section id="application-sections"></section>
+        <section id="application-sections">
+          <div className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4  p-4 md:p-10">
+            {applications.map((item) => (
+              <ApplicationCard {...item} />
+            ))}
+          </div>
+        </section>
       </div>
     </Flowbite>
   );

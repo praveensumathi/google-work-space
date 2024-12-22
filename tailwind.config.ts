@@ -17,8 +17,10 @@ export default {
         secondary: "#CFFAFE",
         "primary-gradient": "linear-gradient(135deg, #0C869A 0%, #23B8CF 100%)",
       },
+
       backgroundImage: {
         "primary-gradient": "linear-gradient(135deg, #0C869A 0%, #23B8CF 100%)",
+        "title-gradient": "linear-gradient(to left, #04c8eb, #00aff3, #0092f6, #0071ed, #5945d2)",
       },
     },
   },
