@@ -11,7 +11,10 @@ const customTheme: CustomFlowbiteTheme["card"] = {
 
 function ServiceCard(item: ServiceList) {
   return (
-    <Card className="max-w-sm text-center flex justify-center" theme={customTheme}>
+    <Card
+      className="max-w-md text-center flex justify-center"
+      theme={customTheme}
+    >
       <div className="flex flex-col items-center">
         <Image src={item.imageUrl} alt={item.title} width={80} height={80} />
         <div className="font-bold text-sm md:text-lg pt-4 bg-title-gradient bg-clip-text text-transparent">

@@ -16,7 +16,7 @@ const customTheme: CustomFlowbiteTheme = {
 export default function Home() {
   return (
     <Flowbite theme={{ theme: customTheme }}>
-      <div className="container-md">
+      <div className="container m-auto">
         <section id="price-plans" className="md:px-10 px-4 pb-16">
           <SectionTitle title="Find the right plan for your business." />
           <div className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 xl:gap-10">
@@ -35,7 +35,7 @@ export default function Home() {
         </section>
         <section id="service-sections" className="md:px-10 px-4 pb-16">
           <SectionTitle title="We offer a wide range of services, including:" />
-          <div className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
             {services.map((item) => (
               <ServiceCard {...item} key={item.title} />
             ))}

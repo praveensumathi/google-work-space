@@ -10,7 +10,7 @@ const customTheme: CustomFlowbiteTheme["card"] = {
 
 function ApplicationCard(item: ApplicationList) {
   return (
-    <Card className="max-w" theme={customTheme}>
+    <Card className="max-w-md" theme={customTheme}>
       <div className="flex gap-3 items-center">
         <Image src={item.imageUrl} alt={item.title} width={40} height={40} />
         <div className="font-extrabold text-lg bg-title-gradient bg-clip-text text-transparent">
