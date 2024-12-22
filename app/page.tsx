@@ -1,7 +1,8 @@
 import PriceCard from "./components/priceCard";
-import { applications, businessPlans } from "./utils/util";
+import { applications, businessPlans, services } from "./utils/util";
 import ApplicationCard from "./components/applicationCard";
 import SectionTitle from "./components/sectionTitle";
+import ServiceCard from "./components/serviceCard";
 
 export default function Home() {
   return (
@@ -19,6 +20,13 @@ export default function Home() {
         <div className="grid grid-rows-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
           {applications.map((item) => (
             <ApplicationCard {...item} key={item.title} />
+          ))}
+        </div>
+      </section>
+      <section id="service-sections">
+        <div className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4  p-4 md:p-10">
+          {services.map((item) => (
+            <ServiceCard {...item} key={item.title} />
           ))}
         </div>
       </section>
