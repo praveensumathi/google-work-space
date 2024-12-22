@@ -4,7 +4,7 @@ import { ApplicationList } from "../types/types";
 
 const customTheme: CustomFlowbiteTheme["card"] = {
   root: {
-    children: "flex h-full flex-col p-4",
+    children: "flex h-full flex-col p-4 ",
   },
 };
 

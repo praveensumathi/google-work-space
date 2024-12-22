@@ -4,13 +4,14 @@ import { ServiceList } from "../types/types";
 
 const customTheme: CustomFlowbiteTheme["card"] = {
   root: {
-    children: "flex h-full flex-col py-4",
+    children:
+      "flex flex-col rounded-lg border border-gray-200 bg-white shadow-md hover:shadow-lg hover:scale-105 transition-all py-4",
   },
 };
 
 function ServiceCard(item: ServiceList) {
   return (
-    <Card className="text-center" theme={customTheme}>
+    <Card className="max-w-sm text-center flex justify-center" theme={customTheme}>
       <div className="flex flex-col items-center">
         <Image src={item.imageUrl} alt={item.title} width={80} height={80} />
         <div className="font-bold text-sm md:text-lg pt-4 bg-title-gradient bg-clip-text text-transparent">

@@ -4,13 +4,14 @@ import clsx from "clsx";
 
 const customTheme: CustomFlowbiteTheme["card"] = {
   root: {
+    base: "flex rounded-lg border border-gray-200 bg-white shadow-md hover:shadow-lg hover:scale-105 transition-all",
     children: "flex h-full flex-col",
   },
 };
 
 function PriceCard({ plans, index }: { plans: PricePlans; index: number }) {
   return (
-    <Card className="max-w" theme={customTheme}>
+    <Card className="max-w-md" theme={customTheme}>
       <h6
         className={clsx(
           "text-lg font-bold text-gray-600 bg-secondary text-center rounded-e-full mr-6 mt-6 py-3",
@@ -35,7 +36,7 @@ function PriceCard({ plans, index }: { plans: PricePlans; index: number }) {
                 />
               </svg>
               <span
-                className="text-sm md:text-lg font-normal leading-tight text-gray-500 dark:text-gray-400"
+                className="text-sm font-normal leading-tight text-gray-500 dark:text-gray-400"
                 dangerouslySetInnerHTML={{ __html: item }}
               ></span>
             </li>
