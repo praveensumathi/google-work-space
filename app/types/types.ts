@@ -7,3 +7,7 @@ export type ApplicationList = {
   title: string;
   description: string;
 };
+export type ServiceList = {
+  imageUrl: string;
+  title: string;
+};

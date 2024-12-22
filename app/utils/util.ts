@@ -1,4 +1,4 @@
-import { ApplicationList, PricePlans } from "../types/types";
+import { ApplicationList, PricePlans, ServiceList } from "../types/types";
 export const businessPlans: PricePlans[] = [
   {
     heading: "Business Starter",
@@ -116,3 +116,22 @@ export const applications: ApplicationList[] = [
     imageUrl: "/work-insights.png", title: "Work Insights", description: "Speed up your Google Workspace rollout"
   },
 ];
+
+export const services: ServiceList[] = [
+  {
+    imageUrl: "/settings.png",
+    title: "Setup and Configuration",
+  },
+  {
+    imageUrl: "/migration.png",
+    title: "Migration Assistance",
+  },
+  {
+    imageUrl: "/learning-support.png",
+    title: "Training and Support",
+  },
+  {
+    imageUrl: "/work-insights.png",
+    title: "Consulting",
+  },
+]
