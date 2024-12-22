@@ -35,7 +35,7 @@ function PriceCard({ plans, index }: { plans: PricePlans; index: number }) {
                 />
               </svg>
               <span
-                className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400"
+                className="text-sm md:text-lg font-normal leading-tight text-gray-500 dark:text-gray-400"
                 dangerouslySetInnerHTML={{ __html: item }}
               ></span>
             </li>

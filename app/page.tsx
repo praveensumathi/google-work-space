@@ -7,7 +7,7 @@ import ServiceCard from "./components/serviceCard";
 export default function Home() {
   return (
     <div className="container-md">
-      <section id="price-plans" className="md:px-10 px-4 pb-20">
+      <section id="price-plans" className="md:px-10 px-4 pb-16">
         <SectionTitle title="Find the right plan for your business." />
         <div className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ">
           {businessPlans.map((item, index) => (
@@ -15,7 +15,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section id="application-sections" className="md:px-10 px-4 pb-20">
+      <section id="application-sections" className="md:px-10 px-4 pb-16">
         <SectionTitle title="Unleash the untapped potential of your beloved apps and take your experience to extraordinary new heights" />
         <div className="grid grid-rows-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
           {applications.map((item) => (
@@ -23,8 +23,9 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section id="service-sections">
-        <div className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4  p-4 md:p-10">
+      <section id="service-sections" className="md:px-10 px-4 pb-16">
+        <SectionTitle title="We offer a wide range of services, including:" />
+        <div className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {services.map((item) => (
             <ServiceCard {...item} key={item.title} />
           ))}

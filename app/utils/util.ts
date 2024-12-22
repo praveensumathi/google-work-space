@@ -86,34 +86,54 @@ export const applications: ApplicationList[] = [
     description: "Beautiful presentations created together",
   },
   {
-    imageUrl: "/google-forms-icon.png", title: "Google Forms", description: "Easy to create surveys and forms for everyone"
+    imageUrl: "/google-forms-icon.png",
+    title: "Google Forms",
+    description: "Easy to create surveys and forms for everyone",
   },
   {
-    imageUrl: "/sites.png", title: "Sites", description: "Effortlessly create impactful team sites"
+    imageUrl: "/sites.png",
+    title: "Sites",
+    description: "Effortlessly create impactful team sites",
   },
   {
-    imageUrl: "/jamboard.png", title: "Jamboard", description: "Visualize your ideas in a new and collaborative way"
+    imageUrl: "/jamboard.png",
+    title: "Jamboard",
+    description: "Visualize your ideas in a new and collaborative way",
   },
   {
-    imageUrl: "/Keep.png", title: "Keep", description: "Capture what’s important and get more done."
+    imageUrl: "/Keep.png",
+    title: "Keep",
+    description: "Capture what’s important and get more done.",
   },
   {
-    imageUrl: "/apps-script.png", title: "Google Apps Script", description: "Optimize how you work"
+    imageUrl: "/apps-script.png",
+    title: "Google Apps Script",
+    description: "Optimize how you work",
   },
   {
-    imageUrl: "/cloud-search.png", title: "Cloud Search", description: "The information you need, right when you need it"
+    imageUrl: "/cloud-search.png",
+    title: "Cloud Search",
+    description: "The information you need, right when you need it",
   },
   {
-    imageUrl: "/admin.png", title: "Admin", description: "Manage Google Workspace for your organization"
+    imageUrl: "/admin.png",
+    title: "Admin",
+    description: "Manage Google Workspace for your organization",
   },
   {
-    imageUrl: "/endpoint.png", title: "Endpoint Management", description: "Keep things simple—and moving."
+    imageUrl: "/endpoint.png",
+    title: "Endpoint Management",
+    description: "Keep things simple—and moving.",
   },
   {
-    imageUrl: "/vault.png", title: "Vault", description: "Data retention and eDiscovery for Google Workspace."
+    imageUrl: "/vault.png",
+    title: "Vault",
+    description: "Data retention and eDiscovery for Google Workspace.",
   },
   {
-    imageUrl: "/work-insights.png", title: "Work Insights", description: "Speed up your Google Workspace rollout"
+    imageUrl: "/work-insights.png",
+    title: "Work Insights",
+    description: "Speed up your Google Workspace rollout",
   },
 ];
 
@@ -131,7 +151,7 @@ export const services: ServiceList[] = [
     title: "Training and Support",
   },
   {
-    imageUrl: "/work-insights.png",
+    imageUrl: "/consulting.png",
     title: "Consulting",
   },
-]
+];
