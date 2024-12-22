@@ -26,11 +26,12 @@ export default function Home() {
           </div>
         </section>
       </div>
+      <div className="container mx-auto">
       <section id="service-sections" className="md:px-10 px-4 pb-16">
         <SectionTitle title="Google Workspace Partner/Reseller India" />
         <About />
       </section>
-
+      </div>
       <div className="container m-auto">
         <section id="price-plans" className="md:px-10 px-4 pb-16">
           <SectionTitle title="Find the right plan for your business." />
