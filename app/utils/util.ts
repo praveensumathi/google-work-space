@@ -1,4 +1,9 @@
-import { ApplicationList, PricePlans, ServiceList } from "../types/types";
+import {
+  ApplicationList,
+  NavMenu,
+  PricePlans,
+  ServiceList,
+} from "../types/types";
 export const businessPlans: PricePlans[] = [
   {
     heading: "Business Starter",
@@ -153,5 +158,28 @@ export const services: ServiceList[] = [
   {
     imageUrl: "/consulting.png",
     title: "Consulting",
+  },
+];
+
+export const navMenus: NavMenu[] = [
+  {
+    title: "Home",
+    link: "#",
+  },
+  {
+    title: "Services",
+    link: "#service-sections",
+  },
+  {
+    title: "Plans",
+    link: "#price-plans",
+  },
+  {
+    title: "Apps",
+    link: "#application-sections",
+  },
+  {
+    title: "Contact",
+    link: "#",
   },
 ];

@@ -6,6 +6,7 @@ import ServiceCard from "./components/serviceCard";
 import { CustomFlowbiteTheme, Flowbite } from "flowbite-react";
 import { Banner } from "./components/banner";
 import About from "./components/about";
+import StickyNavbar from "./components/StickyNavbar";
 
 const customTheme: CustomFlowbiteTheme = {
   card: {
@@ -18,13 +19,13 @@ const customTheme: CustomFlowbiteTheme = {
 export default function Home() {
   return (
     <Flowbite theme={{ theme: customTheme }}>
-      <div className="relative h-[35vh]">
+      <StickyNavbar />
+      <div className="relative h-[30vh]">
         <section className="banner-image bg-cover bg-no-repeat bg-center h-full flex items-center justify-center">
           <div className="absolute inset-0 bg-black opacity-20"></div>
           <Banner title="Google Workspace" />
         </section>
       </div>
-
       <div className="container m-auto">
         <section id="service-sections" className="md:px-10 px-4 pb-10">
           <SectionTitle title="Google Workspace Partner/Reseller India" />

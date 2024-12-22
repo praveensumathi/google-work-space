@@ -11,3 +11,8 @@ export type ServiceList = {
   imageUrl: string;
   title: string;
 };
+
+export type NavMenu = {
+  title: string;
+  link:string
+};
