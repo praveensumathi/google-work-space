@@ -21,19 +21,20 @@ export default {
         "primary-gradient":
           "linear-gradient(to left, #04c8eb, #00aff3, #0092f6, #0071ed, #5945d2)",
         "title-gradient": "linear-gradient(93deg, #0095da 0%, #ed1c24 111%)",
-        'banner-image': "url('/google-workspace-banner.png')",
-
       },
       textShadow: {
-        custom: '0px 5px 10px #000',
+        custom: "0px 5px 10px #000",
       },
     },
   },
-  plugins: [flowbite.plugin(), function ({ addUtilities }) {
-    addUtilities({
-      '.text-shadow-custom': {
-        textShadow: '0px 5px 10px #000',
-      },
-    });
-  },],
+  plugins: [
+    flowbite.plugin(),
+    function ({ addUtilities }) {
+      addUtilities({
+        ".text-shadow-custom": {
+          textShadow: "0px 5px 10px #000",
+        },
+      });
+    },
+  ],
 } satisfies Config;

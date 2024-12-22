@@ -22,3 +22,7 @@ body {
   background: var(--background);
   letter-spacing: 1px;
 }
+
+.banner-image{
+  background-image: url('/google-workspace-banner.png');
+}
