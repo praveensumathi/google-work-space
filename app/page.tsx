@@ -4,6 +4,7 @@ import ApplicationCard from "./components/applicationCard";
 import SectionTitle from "./components/sectionTitle";
 import ServiceCard from "./components/serviceCard";
 import { CustomFlowbiteTheme, Flowbite } from "flowbite-react";
+import { Banner } from "./components/banner";
 
 const customTheme: CustomFlowbiteTheme = {
   card: {
@@ -16,6 +17,15 @@ const customTheme: CustomFlowbiteTheme = {
 export default function Home() {
   return (
     <Flowbite theme={{ theme: customTheme }}>
+      <div className="container mx-auto max-w-full">
+        <section className="bg-banner-image bg-no-repeat bg-center relative bg-contain h-[200px] md:h-[300px] flex items-center justify-center">
+          <div className="absolute inset-0 bg-gray-600 opacity-20 h-[200px] md:h-[300px]"></div>
+          <div className="text-5xl text-white font-bold text-shadow relative flex ">
+            <Banner title={"Google Workspace"} />
+          </div>
+        </section>
+      </div>
+
       <div className="container m-auto">
         <section id="price-plans" className="md:px-10 px-4 pb-16">
           <SectionTitle title="Find the right plan for your business." />
