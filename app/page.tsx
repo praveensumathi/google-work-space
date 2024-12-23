@@ -1,5 +1,10 @@
 import PriceCard from "./components/priceCard";
-import { applications, businessPlans, services } from "./utils/util";
+import {
+  applications,
+  businessPlans,
+  educationPlans,
+  services,
+} from "./utils/util";
 import ApplicationCard from "./components/applicationCard";
 import SectionTitle from "./components/sectionTitle";
 import ServiceCard from "./components/serviceCard";
@@ -7,6 +12,7 @@ import { CustomFlowbiteTheme, Flowbite } from "flowbite-react";
 import { Banner } from "./components/banner";
 import About from "./components/about";
 import StickyNavbar from "./components/StickyNavbar";
+import clsx from "clsx";
 
 const customTheme: CustomFlowbiteTheme = {
   card: {
@@ -27,7 +33,7 @@ export default function Home() {
         </section>
       </div>
       <div className="container m-auto">
-        <section id="service-sections" className="md:px-10 px-4 pb-10">
+        <section id="#" className="md:px-10 px-4 pb-10">
           <SectionTitle title="Google Workspace Partner/Reseller India" />
           <About />
         </section>
@@ -40,9 +46,25 @@ export default function Home() {
           </div>
         </section>
         <section id="price-plans" className="md:px-10 px-4 pb-10">
-          <SectionTitle title="Find the right plan for your business." />
+          <SectionTitle title="Find the right plan for your Business." />
           <div className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {businessPlans.map((item, index) => (
+              <PriceCard plans={item} index={index} key={item.heading} />
+            ))}
+          </div>
+
+          <SectionTitle title="Find the right plan for your Education." />
+          <div
+            className={clsx(
+              "grid grid-rows-1 sm:grid-cols-1 gap-6 place-items-center",
+              {
+                "md:grid-cols-1": educationPlans.length == 1,
+                "md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4":
+                  educationPlans.length > 1,
+              }
+            )}
+          >
+            {educationPlans.map((item, index) => (
               <PriceCard plans={item} index={index} key={item.heading} />
             ))}
           </div>

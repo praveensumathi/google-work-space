@@ -14,8 +14,8 @@ function PriceCard({ plans, index }: { plans: PricePlans; index: number }) {
     <Card className="max-w-md" theme={customTheme}>
       <h6
         className={clsx(
-          "text-lg font-bold text-gray-600 bg-secondary text-center rounded-e-full mr-6 mt-6 py-3",
-          { "bg-primary-gradient text-white": index % 2 != 0 }
+          "text-lg font-bold text-white bg-secondary text-center rounded-e-full mr-6 mt-6 py-3",
+          { "bg-primary-gradient  text-white": index % 2 != 0 }
         )}
       >
         {plans.heading}
