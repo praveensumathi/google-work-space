@@ -5,7 +5,7 @@ import { ApplicationList } from "../types/types";
 const customTheme: CustomFlowbiteTheme["card"] = {
   root: {
     children:
-      "flex h-full flex-col p-4 hover:pl-4 transition-all hover:border-l-4 hover:border-primary",
+      "flex h-full flex-col p-4 hover:pl-4 transition-all hover:border-l-2 hover:border-primary",
   },
 };
 
