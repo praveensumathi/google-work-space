@@ -10,7 +10,7 @@ function About() {
         height={800}
         className="object-cover"
       />
-      <div className="font-semibold tex-xl text-gray-500 pl-10 leading-loose">
+      <div className="font-semibold text-sm md:text-xl text-gray-500 md:pl-10 leading-loose">
         <p>
           Looking for a Google Workspace Premier partner or reseller in India?
           <br />

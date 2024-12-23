@@ -194,6 +194,6 @@ export const navMenus: NavMenu[] = [
   },
   {
     title: "Contact",
-    link: "#",
+    link: "#contact",
   },
 ];
