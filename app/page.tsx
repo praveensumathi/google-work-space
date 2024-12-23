@@ -48,7 +48,7 @@ export default function Home() {
         </section>
         <section id="price-plans" className="md:px-10 px-4 pb-10">
           <SectionTitle title="Find the right plan for your Business." />
-          <div className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6">
             {businessPlans.map((item, index) => (
               <PriceCard plans={item} index={index} key={item.heading} />
             ))}
