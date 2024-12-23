@@ -14,6 +14,7 @@ import About from "./components/about";
 import StickyNavbar from "./components/StickyNavbar";
 import clsx from "clsx";
 import ContactForm from "./components/contactForm";
+import ContactDetail from "./components/ContactDetail";
 
 const customTheme: CustomFlowbiteTheme = {
   card: {
@@ -79,12 +80,14 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <footer className="md:px-10 px-4 pb-10">
-        <div className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
-          <ContactForm />
-          <ContactForm />
+      <section id="contact" className="bg-blue-50">
+        <div className="container m-auto md:px-10 px-4 py-10">
+          <div className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+            <ContactDetail />
+            <ContactForm />
+          </div>
         </div>
-      </footer>
+      </section>
     </Flowbite>
   );
 }
