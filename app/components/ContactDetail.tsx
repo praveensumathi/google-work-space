@@ -1,7 +1,7 @@
 import PhoneIcons from "./icons/PhoneIcons";
-import MailIcon from "./icons/MailICon";
 import HourIcon from "./icons/HourIcon";
 import LocationIcon from "./icons/LocationIcon";
+import MailIcon from "./icons/MailIcon";
 
 const contactItems = [
   {
@@ -43,9 +43,9 @@ function ContactDetail() {
           <a
             key={item.id + "contact"}
             href={item.href}
-            className={`flex items-center text-center flex-col p-6 md:p-7 flex-grow my-2 md:my-4 relative w-full hover:border-2 rounded-md`}
+            className={`flex items-center text-center flex-col p-6 md:p-8 flex-grow my-2 md:my-5 relative w-full hover:border-2 rounded-md`}
           >
-            <div className="p-4">{item.icon}</div>
+            <div className="p-3">{item.icon}</div>
             <div className="text-lg font-bold ">{item.title}</div>
             <div className="mt-4 hover:text-primary hover:decoration-primary decoration-2 hover:underline">
               {item.value}
