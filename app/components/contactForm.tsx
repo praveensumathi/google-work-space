@@ -90,7 +90,7 @@ const ContactForm = () => {
               name="entry.1332091514"
               id="username-success"
               className="bg-white border border-primary text-primary placeholder-gray-500 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5"
-              placeholder="Enter your full name"
+              placeholder="Enter your organization name"
               autoComplete="off"
               required
               dir="auto"
@@ -106,7 +106,7 @@ const ContactForm = () => {
               name="entry.1332091514"
               id="username-success"
               className="bg-white border border-primary text-primary placeholder-gray-500 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5"
-              placeholder="Enter your full name"
+              placeholder="Enter your users count"
               autoComplete="off"
               required
               dir="auto"
