@@ -16,16 +16,22 @@ function About() {
           <br />
           Look no further than Capzim!{" "}
           <b className="bg-title-gradient bg-clip-text text-transparent text-xl">
-            Call us now on +91 987654321{" "}
-          </b>
+            Call us now on{" "}
+            <a
+              href="tel:7339119231"
+              className="underline decoration-primary decoration-2 leading-3"
+            >
+              +91 7339119231
+            </a>
+          </b>{" "}
           to get started. We are a certified Google Workspace Premier partner
           and have been providing services in India with the tools they need to
           succeed.
         </p>
         <p className="mt-5">
           <b>
-            Capzim is an authorized Google Workspace and Google for Education
-            partner or reseller in India.
+            Capzim Tech Solution is an authorized Google Workspace and Google
+            for Education partner or reseller in India.
           </b>
         </p>
       </div>
