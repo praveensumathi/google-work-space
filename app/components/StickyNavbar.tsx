@@ -39,7 +39,7 @@ export default function StickyNavbar() {
         isVisible ? "translate-y-0 bg-white text-black" : "-translate-y-20 "
       }`}
     >
-      <div className="max-w-7xl mx-auto ">
+      <div className="container m-auto ">
         <div className="h-16 relative">
           <div className="px-4 sm:px-6 lg:px-8 flex justify-between items-center h-full">
             <div className="flex-shrink-0 ">
