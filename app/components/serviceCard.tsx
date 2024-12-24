@@ -5,7 +5,7 @@ import { ServiceList } from "../types/types";
 const customTheme: CustomFlowbiteTheme["card"] = {
   root: {
     children:
-      "flex flex-col rounded-lg border border-gray-200 bg-white shadow-md hover:shadow-lg hover:scale-105 transition-all py-4",
+      "flex flex-col rounded-lg border border-gray-200 bg-white hover:shadow-md hover:scale-105 transition-all py-4",
   },
 };
 

@@ -13,14 +13,13 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "#5945d2",
-        secondary: "#04c8eb",
+        primary: "#0E21C9",
+        secondary: "#0E21C9",
       },
-
       backgroundImage: {
         "primary-gradient":
-          "linear-gradient(to left, #04c8eb, #00aff3, #0092f6, #0071ed, #5945d2)",
-        "title-gradient": "linear-gradient(93deg, #0095da 0%, #ed1c24 111%)",
+          "linear-gradient(to left, #0E21C9, #0E21C9, #0E21C9, #0E21C9, #0E21C9)",
+        "title-gradient": "linear-gradient(93deg, #0E21C9 0%, #0E21C9 111%)",
       },
       textShadow: {
         custom: "0px 5px 10px #000",

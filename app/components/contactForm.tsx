@@ -4,8 +4,8 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className="w-full p-6 md:p-8 bg-white border rounded-xl shadow-md">
-      <h1 className="text-center font-semibold text-2xl mb-2 md:mb-6">
+    <div className="w-full p-6 md:p-8 bg-white border rounded-xl">
+      <h1 className="text-center font-extrabold bg-primary-gradient bg-clip-text text-transparent text-2xl mb-2 md:mb-6 text-">
         Contact Us
       </h1>
       <div id="contact-form">
@@ -27,7 +27,7 @@ const ContactForm = () => {
           <div className="mb-5">
             <label
               htmlFor="username-success"
-              className="block mb-1 text-md font-bold  text-primary"
+              className="block mb-1 text-md bg-title-gradient bg-clip-text text-transparent font-bold"
             >
               Full Name
             </label>
@@ -45,7 +45,7 @@ const ContactForm = () => {
           <div className="mb-5">
             <label
               htmlFor="username-success"
-              className="block mb-1 text-md font-bold  text-primary"
+              className="block mb-1 text-md bg-title-gradient bg-clip-text text-transparent font-bold"
             >
               E-mail
             </label>
@@ -63,7 +63,7 @@ const ContactForm = () => {
           <div className="mb-5">
             <label
               htmlFor="username-success"
-              className="block mb-1 text-md font-bold  text-primary"
+              className="block mb-1 text-md bg-title-gradient bg-clip-text text-transparent font-bold"
             >
               Phone Number
             </label>
@@ -78,9 +78,43 @@ const ContactForm = () => {
               dir="auto"
             />
           </div>
+          <div className="mb-5">
+            <label
+              htmlFor="username-success"
+              className="block mb-1 text-md bg-title-gradient bg-clip-text text-transparent font-bold"
+            >
+              Organization
+            </label>
+            <input
+              type="text"
+              name="entry.1332091514"
+              id="username-success"
+              className="bg-white border border-primary text-primary placeholder-gray-500 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5"
+              placeholder="Enter your full name"
+              autoComplete="off"
+              required
+              dir="auto"
+            />
+          </div>
+          <div className="mb-5">
+            <label
+              htmlFor="username-success"
+              className="block mb-1 text-md bg-title-gradient bg-clip-text text-transparent font-bold"
+            >Number of Users</label>
+            <input
+              type="text"
+              name="entry.1332091514"
+              id="username-success"
+              className="bg-white border border-primary text-primary placeholder-gray-500 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5"
+              placeholder="Enter your full name"
+              autoComplete="off"
+              required
+              dir="auto"
+            />
+          </div>
           <button
             type="submit"
-            className="text-white bg-primary focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center mt-5"
+            className="text-white focus:ring-4 focus:outline-none rounded-lg text-md font-semibold w-full px-5 py-2.5 text-center mt-5 bg-primary-gradient"
           >
             Submit
           </button>

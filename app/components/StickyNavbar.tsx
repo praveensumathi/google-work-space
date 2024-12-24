@@ -35,16 +35,16 @@ export default function StickyNavbar() {
 
   return (
     <nav
-      className={`bg-white shadow-md sticky top-0 z-50 transition-all duration-300 ease-in-out ${
-        isVisible ? "translate-y-0" : "-translate-y-20"
+      className={`shadow-md sticky top-0 z-50 transition-all duration-300 ease-in-out ${
+        isVisible ? "translate-y-0 bg-white text-black" : "-translate-y-20 "
       }`}
     >
       <div className="max-w-7xl mx-auto ">
         <div className="h-16 relative">
           <div className="px-4 sm:px-6 lg:px-8 flex justify-between items-center h-full">
             <div className="flex-shrink-0 ">
-              <a href="#" className="text-xl font-bold text-gray-900">
-                MyLogo
+              <a href="#" className="text-2xl font-bold">
+                Capzim
               </a>
             </div>
 
@@ -53,7 +53,7 @@ export default function StickyNavbar() {
                 <a
                   key={item.title}
                   href={item.link}
-                  className="text-gray-700 p-2 border-b-2 border-transparent hover:border-blue-500 cursor-pointer transition-all duration-300 ease-linear font-semibold"
+                  className="p-2 border-b-2 border-transparent hover:border-primary cursor-pointer transition-all duration-300 ease-linear font-semibold"
                 >
                   {item.title}
                 </a>

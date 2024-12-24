@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const isProd = true;
+const isProd = false;
 const repoName = "google-work-space"; // Replace with your GitHub repository name
 
 const nextConfig: NextConfig = {
@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
   basePath: isProd ? `/${repoName}` : "",
   assetPrefix: isProd ? `/${repoName}/` : "",
   trailingSlash: true,
-  output: "export",
+  // output: "export",
 };
 
 export default nextConfig;

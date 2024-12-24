@@ -80,9 +80,10 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <section id="contact" className="bg-blue-50">
-        <div className="container m-auto md:px-10 px-4 py-10">
-          <div className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+      <section id="contact" className="border-t-1">
+        <div className="container m-auto md:px-10 px-4">
+          <div className="bg-primary-gradient h-0.5 md:my-16 sm:my-12" />
+          <div className="py-10 grid grid-rows-1 sm:grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
             <ContactDetail />
             <ContactForm />
           </div>

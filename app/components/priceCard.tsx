@@ -4,7 +4,7 @@ import clsx from "clsx";
 
 const customTheme: CustomFlowbiteTheme["card"] = {
   root: {
-    base: "flex rounded-lg border border-gray-200 bg-white shadow-md hover:shadow-lg hover:scale-105 transition-all",
+    base: "flex rounded-lg border border-gray-200 bg-white hover:shadow-lg hover:scale-105 transition-all",
     children: "flex h-full flex-col",
   },
 };
@@ -43,7 +43,7 @@ function PriceCard({ plans, index }: { plans: PricePlans; index: number }) {
           ))}
         </ul>
       </div>
-      <div className="m-6 flex justify-end flex-col h-full">
+      {/* <div className="m-6 flex justify-end flex-col h-full">
         <button
           type="button"
           className="font-semibold w-full h-10 justify-center 
@@ -52,7 +52,7 @@ function PriceCard({ plans, index }: { plans: PricePlans; index: number }) {
         >
           Contact Us
         </button>
-      </div>
+      </div> */}
     </Card>
   );
 }

@@ -10,12 +10,12 @@ function About() {
         height={800}
         className="object-cover"
       />
-      <div className="font-semibold text-sm md:text-lg text-gray-500 md:pl-10 leading-loose">
+      <div className="font-semibold text-sm md:text-lg md:pl-10 leading-loose text-gray-500">
         <p>
           Looking for a Google Workspace Premier partner or reseller in India?
           <br />
-          Look no further than Digisoft!{" "}
-          <b className="bg-title-gradient bg-clip-text text-transparent">
+          Look no further than Capzim!{" "}
+          <b className="bg-title-gradient bg-clip-text text-transparent text-xl">
             Call us now on +91 987654321{" "}
           </b>
           to get started. We are a certified Google Workspace Premier partner
@@ -24,7 +24,7 @@ function About() {
         </p>
         <p className="mt-5">
           <b>
-            Digisoft is an authorized Google Workspace and Google for Education
+            Capzim is an authorized Google Workspace and Google for Education
             partner or reseller in India.
           </b>
         </p>

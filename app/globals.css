@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* :root {
+  --background: #252525;
+  --foreground: #ffff;
+} */
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -23,6 +28,6 @@ body {
   letter-spacing: 1px;
 }
 
-.banner-image{
-  background-image: url('/google-workspace-banner.png');
+.banner-image {
+  background-image: url("/google-workspace-banner.png");
 }
