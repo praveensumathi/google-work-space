@@ -43,16 +43,17 @@ function PriceCard({ plans, index }: { plans: PricePlans; index: number }) {
           ))}
         </ul>
       </div>
-      {/* <div className="m-6 flex justify-end flex-col h-full">
-        <button
+      <div className="m-6 flex justify-end flex-col h-full">
+        <a
+          href="#contact"
           type="button"
-          className="font-semibold w-full h-10 justify-center 
+          className="font-semibold w-full h-10 justify-center cursor-pointer
           rounded-lg bg-primary-gradient py-2.5 text-center text-sm
            text-white"
         >
           Contact Us
-        </button>
-      </div> */}
+        </a>
+      </div>
     </Card>
   );
 }

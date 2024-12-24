@@ -39,7 +39,7 @@ export default function Home() {
           <SectionTitle title="Google Workspace Partner/Reseller India" />
           <About />
         </section>
-        <section id="service-sections" className="md:px-10 px-4 pb-10">
+        <section id="service-sections" className="md:px-10 px-4 pb-10 md:mt-6">
           <SectionTitle title="We offer a wide range of services, including:" />
           <div className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
             {services.map((item) => (
@@ -47,7 +47,7 @@ export default function Home() {
             ))}
           </div>
         </section>
-        <section id="price-plans" className="md:px-10 px-4 pb-10">
+        <section id="price-plans" className="md:px-10 px-4 pb-10 md:mt-6">
           <SectionTitle title="Find the right plan for your Business." />
           <div className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6">
             {businessPlans.map((item, index) => (
@@ -55,20 +55,22 @@ export default function Home() {
             ))}
           </div>
 
-          <SectionTitle title="Find the right plan for your Education." />
-          <div
-            className={clsx(
-              "grid grid-rows-1 sm:grid-cols-1 gap-6 place-items-center",
-              {
-                "md:grid-cols-1": educationPlans.length == 1,
-                "md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4":
-                  educationPlans.length > 1,
-              }
-            )}
-          >
-            {educationPlans.map((item, index) => (
-              <PriceCard plans={item} index={index} key={item.heading} />
-            ))}
+          <div className="mt-8">
+            <SectionTitle title="Find the right plan for your Education." />
+            <div
+              className={clsx(
+                "grid grid-rows-1 sm:grid-cols-1 gap-6 place-items-center",
+                {
+                  "md:grid-cols-1": educationPlans.length == 1,
+                  "md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4":
+                    educationPlans.length > 1,
+                }
+              )}
+            >
+              {educationPlans.map((item, index) => (
+                <PriceCard plans={item} index={index} key={item.heading} />
+              ))}
+            </div>
           </div>
         </section>
         <section id="application-sections" className="md:px-10 px-4 pb-10">
@@ -82,7 +84,7 @@ export default function Home() {
       </div>
       <section id="contact" className="border-t-1">
         <div className="container m-auto md:px-10 px-4">
-          <div className="bg-primary-gradient h-0.5 md:my-16 sm:my-12" />
+          <div className="bg-primary-gradient h-0.5 md:my-14 sm:my-12" />
           <div className="py-10 grid grid-rows-1 sm:grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
             <ContactDetail />
             <ContactForm />
