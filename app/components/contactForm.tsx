@@ -1,12 +1,14 @@
 "use client";
 
 import React from "react";
+import PhoneIcons from "./icons/PhoneIcons";
 
 const ContactForm = () => {
   return (
     <div className="w-full p-6 md:p-8 bg-white border rounded-xl">
       <h1 className="text-center font-extrabold bg-primary-gradient bg-clip-text text-transparent text-2xl mb-2 md:mb-6 text-">
         Contact Us
+        <PhoneIcons />
       </h1>
       <div id="contact-form">
         <form
@@ -100,7 +102,9 @@ const ContactForm = () => {
             <label
               htmlFor="username-success"
               className="block mb-1 text-md bg-title-gradient bg-clip-text text-transparent font-bold"
-            >Number of Users</label>
+            >
+              Number of Users
+            </label>
             <input
               type="text"
               name="entry.1332091514"
