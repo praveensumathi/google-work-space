@@ -193,7 +193,7 @@ export const navMenus: NavMenu[] = [
     link: "#application-sections",
   },
   {
-    title: "Contact",
+    title: "Contact Us",
     link: "#contact",
   },
 ];
