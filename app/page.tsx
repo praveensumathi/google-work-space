@@ -15,6 +15,7 @@ import StickyNavbar from "./components/StickyNavbar";
 import clsx from "clsx";
 import ContactForm from "./components/contactForm";
 import ContactDetail from "./components/ContactDetail";
+import { FooterIcons } from "./components/FooterIcons";
 
 const customTheme: CustomFlowbiteTheme = {
   card: {
@@ -27,6 +28,7 @@ const customTheme: CustomFlowbiteTheme = {
 export default function Home() {
   return (
     <Flowbite theme={{ theme: customTheme }}>
+      <FooterIcons/>
       <StickyNavbar />
       <div className="relative h-[30vh]">
         <section className="banner-image bg-cover bg-no-repeat bg-center h-full flex items-center justify-center">
