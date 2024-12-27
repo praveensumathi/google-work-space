@@ -4,6 +4,12 @@ import React from "react";
 import PhoneIcons from "./icons/PhoneIcons";
 
 const ContactForm = () => {
+  const commonInputFieldClassName =
+    "bg-white border border-primary text-primary placeholder-gray-500 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5";
+
+  const commonLabelClassName =
+    "block mb-1 text-md bg-title-gradient bg-clip-text text-transparent font-bold";
+
   return (
     <div className="w-full p-6 md:p-8 bg-white border rounded-xl">
       <h1 className="text-center font-extrabold bg-primary-gradient bg-clip-text text-transparent text-2xl mb-2 md:mb-6 text-">
@@ -27,17 +33,14 @@ const ContactForm = () => {
           }}
         >
           <div className="mb-5">
-            <label
-              htmlFor="username-success"
-              className="block mb-1 text-md bg-title-gradient bg-clip-text text-transparent font-bold"
-            >
+            <label htmlFor="username" className={commonLabelClassName}>
               Full Name
             </label>
             <input
               type="text"
               name="entry.1332091514"
-              id="username-success"
-              className="bg-white border border-primary text-primary placeholder-gray-500 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5"
+              id="username"
+              className={commonInputFieldClassName}
               placeholder="Enter your full name"
               autoComplete="off"
               required
@@ -45,17 +48,14 @@ const ContactForm = () => {
             />
           </div>
           <div className="mb-5">
-            <label
-              htmlFor="username-success"
-              className="block mb-1 text-md bg-title-gradient bg-clip-text text-transparent font-bold"
-            >
+            <label htmlFor="email" className={commonLabelClassName}>
               E-mail
             </label>
             <input
               type="text"
-              id="email-input"
+              id="email"
               name="entry.381823084"
-              className="bg-white border border-primary text-primary placeholder-gray-500 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5"
+              className={commonInputFieldClassName}
               placeholder="Enter your email"
               autoComplete="off"
               required
@@ -63,17 +63,14 @@ const ContactForm = () => {
             />
           </div>
           <div className="mb-5">
-            <label
-              htmlFor="username-success"
-              className="block mb-1 text-md bg-title-gradient bg-clip-text text-transparent font-bold"
-            >
+            <label htmlFor="phone" className={commonLabelClassName}>
               Phone Number
             </label>
             <input
               type="tel"
-              id="phone-input"
+              id="phone"
               name="entry.591353628"
-              className="bg-white border border-primary text-primary placeholder-gray-500 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5"
+              className={commonInputFieldClassName}
               placeholder="Enter your Phone number"
               autoComplete="off"
               required
@@ -81,17 +78,14 @@ const ContactForm = () => {
             />
           </div>
           <div className="mb-5">
-            <label
-              htmlFor="username-success"
-              className="block mb-1 text-md bg-title-gradient bg-clip-text text-transparent font-bold"
-            >
+            <label htmlFor="organization" className={commonLabelClassName}>
               Organization
             </label>
             <input
               type="text"
-              name="entry.1332091514"
-              id="username-success"
-              className="bg-white border border-primary text-primary placeholder-gray-500 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5"
+              name="entry.499656946"
+              id="organization"
+              className={commonInputFieldClassName}
               placeholder="Enter your organization name"
               autoComplete="off"
               required
@@ -99,17 +93,14 @@ const ContactForm = () => {
             />
           </div>
           <div className="mb-5">
-            <label
-              htmlFor="username-success"
-              className="block mb-1 text-md bg-title-gradient bg-clip-text text-transparent font-bold"
-            >
+            <label htmlFor="count" className={commonLabelClassName}>
               Number of Users
             </label>
             <input
               type="text"
-              name="entry.1332091514"
-              id="username-success"
-              className="bg-white border border-primary text-primary placeholder-gray-500 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5"
+              name="entry.1595288912"
+              id="count"
+              className={commonInputFieldClassName}
               placeholder="Enter your users count"
               autoComplete="off"
               required

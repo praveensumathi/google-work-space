@@ -16,6 +16,7 @@ import clsx from "clsx";
 import ContactForm from "./components/contactForm";
 import ContactDetail from "./components/ContactDetail";
 import { FooterIcons } from "./components/FooterIcons";
+import Benefits from "./components/Benefits";
 
 const customTheme: CustomFlowbiteTheme = {
   card: {
@@ -28,7 +29,7 @@ const customTheme: CustomFlowbiteTheme = {
 export default function Home() {
   return (
     <Flowbite theme={{ theme: customTheme }}>
-      <FooterIcons/>
+      <FooterIcons />
       <StickyNavbar />
       <div className="relative h-[30vh]">
         <section className="banner-image bg-cover bg-no-repeat bg-center h-full flex items-center justify-center">
@@ -38,7 +39,7 @@ export default function Home() {
       </div>
       <div className="container m-auto">
         <section id="#" className="md:px-10 px-4 pb-10">
-          <SectionTitle title="Google Workspace Partner/Reseller India" />
+          <SectionTitle title="Authorized Google Workspace Partner/Reseller in India" />
           <About />
         </section>
         <section id="service-sections" className="md:px-10 px-4 pb-10 md:mt-6">
@@ -81,6 +82,12 @@ export default function Home() {
             {applications.map((item) => (
               <ApplicationCard {...item} key={item.title} />
             ))}
+          </div>
+        </section>
+        <section id="benefits-sections" className="md:px-10 px-6 pb-10">
+          <SectionTitle title="Some benefits of using Google Workspace" />
+          <div className="grid grid-rows-1 grid-cols-1 gap-4">
+            <Benefits />
           </div>
         </section>
       </div>

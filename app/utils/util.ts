@@ -197,3 +197,11 @@ export const navMenus: NavMenu[] = [
     link: "#contact",
   },
 ];
+
+export const benefitsOfWorkSpaces = [
+  "<b>Increased productivity:</b> Google Workspace tools are designed to help you work more efficiently and effectively.",
+  "<b>Improved collaboration:</b> Google Workspace makes it easy to collaborate with others, whether they're in your office or around the world.",
+  "<b>Reduced costs:</b> Google Workspace is a cost-effective way to get the productivity and collaboration tools you need.",
+  "<b>Enhanced security:</b> Google Workspace is built on Google's secure infrastructure, so you can be confident that your data is safe.",
+  "<b>Work anywhere with 24x7 support:</b> Google Workspace is built on Google's secure infrastructure, so you can be confident that your data is safe. Whether you operate from your domestic area or internationally, Google Workspace works at any time, from any location and with any device (computer, phone and tablet). In addition, Google offers 24/7 help and support for Google Workspace users.",
+];
