@@ -9,8 +9,8 @@ export const FooterIcons = () => {
           <Image
             src="/menu.png"
             alt="menu"
-            width={60}
-            height={60}
+            width={50}
+            height={50}
             className="my-4"
           />
         </a>
@@ -20,7 +20,7 @@ export const FooterIcons = () => {
           href="https://api.whatsapp.com/send?phone=7339119231&text=Hi!%20Capzim.%20I%20m%20interested%20in%20Google%20Workspace.%20Kindly%20provide%20me%20more%20information%20for%20the%20same."
           target="blank"
         >
-          <Image src="/whatsapp.png" alt="Whatsapp" width={60} height={60} />
+          <Image src="/whatsapp.png" alt="Whatsapp" width={50} height={50} />
         </a>
       </div>
     </div>
