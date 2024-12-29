@@ -17,6 +17,12 @@ import ContactForm from "./components/contactForm";
 import ContactDetail from "./components/ContactDetail";
 import { FooterIcons } from "./components/FooterIcons";
 import Benefits from "./components/Benefits";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Capzim",
+  description: "Authorized Google Workspace Partner/Reseller in India",
+};
 
 const customTheme: CustomFlowbiteTheme = {
   card: {
